@@ -1,119 +1,220 @@
-body{
+/* Estilos generales */
+body {
     background-color: #f4f4f4;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-
 }
- /* contenido header */
-.logo__container{
+
+/* Estilos del encabezado */
+.logo__container {
     display: flex;
     justify-content: start;
     align-items: center;
     padding-left: 4rem;
 }
-.logo__title{
+
+.logo__title {
     font-size: 24px;
     font-weight: 700px;
 }
 
-.logo__image{
+.logo__image {
     width: 55px;
     height: 55px;
     border-radius: 10px;
     margin-right: 1rem;
 }
-/* main */
-.main{
+
+/* Estilos del contenido principal */
+.main {
     padding-left: 4rem;
     padding-right: 4rem;
 }
-    /* contenido novedades */
-.novedades__title{
+
+/* Estilos de la sección novedades */
+.novedades__title {
     font-size: 28px;
     font-weight: 700;
 }
-    
-.novedades__container{
-    display:grid;
+
+.novedades__container {
+    display: grid;
     grid-template-columns: 60% 40%;
     gap: 2rem;
     margin: 0 auto;
-    max-width: 1200px;
 }
-        /* novedades enfasis */
-.card__logo-enfasis{
+
+/* Estilos de las tarjetas de novedades en énfasis */
+.card__logo--enfasis {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-.card__date-enfasis{
+
+.card__date--enfasis {
     font-size: 18px;
     font-weight: 400px;
     padding: 0rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.card__title-enfasis{
+
+.card__title--enfasis {
     font-size: 24px;
     padding: 0rem;
     margin: 0rem;
 }
-.card__autor-enfasis{
-    display: flex;
+
+.card__autor--enfasis {
+    display: inline-flex;
     justify-content: start;
     align-items: center;
     margin-top: 0.5rem;
 }
-.autor__image-enfasis{
+
+.autor__image--enfasis {
     width: 60px;
     height: 60px;
     border-radius: 77px;
     margin-right: 1rem;
 }
-.autor__name-enfasis{
+
+.autor__name--enfasis {
     font-size: 24px;
     font-weight: 500px;
 }
 
-.novedades__card{
+/* Estilos de las tarjetas de novedades */
+.novedades__card {
     display: flex;
     justify-content: start;
     padding-bottom: 1rem;
 }
-.card__content{
+
+.card__content {
     padding-left: 1rem;
     margin: 0;
 }
-.card__image{
+
+.card__image {
     width: 50%;
     height: auto;
     border-radius: 10px;
 }
-.card__title{
+
+.card__title {
     font-size: 20px;
     font-weight: 700px;
     margin: 0;
+    padding-top: 1rem;
 }
-.card__date{
+
+.card__date {
     font-size: 20px;
     margin: 0;
+    display: inline-block;
 }
-.autor__name{
+
+.autor__name {
     font-size: 16px;
     font-weight: 500px;
     padding-left: 0.5rem;
     margin:0;
 }
-.autor__image{
+
+.autor__image {
     height: 40px;
     width: 40px;
     border-radius: 77px;
 }
-.footer{
+
+/* Estilos de la sección */
+.section {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap: 8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/* Estilos de las tarjetas de post populares */
+.populares__grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.populares__card {
+    padding-bottom: 2rem;
+    display: block;
+}
+
+.card__image--popular {
+    width: 100%;
+    height:55%;
+    border-radius: 20px;
+}
+
+/* Estilos de las categorías */
+.categorias__title {
+    padding-left: 1rem;
+}
+
+.categorias__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #f4f4f4;
+    border-radius: 10PX;
+    margin: 1rem;
+}
+
+/* Estilos de las cajas de categorías según su nombre */
+.categorias__box--html {
+    background-color: #E93E30;
+}
+
+.categorias__box--js {
+    background-color: #F7E018;
+}
+
+.categorias__box--css {
+    background-color: #299ED5
+}
+
+.categorias__box--react {
+    background-color: #292C33;
+}
+
+.categorias__box--vue {
+    background-color: #67C770;
+}
+
+.categorias__box--bootstrap {
+    background-color: #563D7C;
+}
+
+.categorias__img {
+    width: 25%;
+    height: 25%;
+}
+
+.categorias__ref {
+    text-decoration: none;
+    color: #171717;
+    padding-left: 1rem;
+    font-size: 20px;
+}
+
+/* Estilos del pie de página */
+.footer {
     display: flex;
     justify-content: space-between;
 }
-.footer__text{
-    padding-right: 4rem;;
+
+.footer__text {
+    padding-right: 4rem;
 }
